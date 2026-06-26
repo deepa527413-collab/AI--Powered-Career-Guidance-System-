@@ -1,0 +1,50 @@
+                   +----------------------+
+                   |       STUDENT       |
+                   +----------------------+
+                   | Student_ID (PK)     |
+                   | Name                |
+                   | Email               |
+                   | Password            |
+                   | Department          |
+                   | Year                |
+                   +----------+----------+
+                              |
+                              | 1
+                              |
+                              | M
+                   +----------v----------+
+                   |    ASSESSMENT       |
+                   +---------------------+
+                   | Assessment_ID (PK)  |
+                   | Student_ID (FK)     |
+                   | Python_Skill        |
+                   | ML_Skill            |
+                   | DBMS_Skill          |
+                   | Aptitude            |
+                   | Communication       |
+                   +----------+----------+
+                              |
+                              | M
+                              |
+                              | 1
+                   +----------v----------+
+                   | CAREER_RECOMMENDATION |
+                   +------------------------+
+                   | Recommendation_ID (PK) |
+                   | Assessment_ID (FK)     |
+                   | Career_Name            |
+                   | Accuracy               |
+                   | Description            |
+                   +----------+-------------+
+                              |
+                              | 1
+                              |
+                              | M
+                   +----------v----------+
+                   |      COURSE         |
+                   +---------------------+
+                   | Course_ID (PK)      |
+                   | Career_Name         |
+                   | Course_Name         |
+                   | Platform            |
+                   +---------------------+
