@@ -1,0 +1,27 @@
+CREATE TABLE resumes (
+
+id INT AUTO_INCREMENT PRIMARY KEY,
+
+user_email VARCHAR(100),
+
+file_name VARCHAR(255),
+
+upload_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+
+);
+
+CREATE TABLE admins (
+
+id INT AUTO_INCREMENT PRIMARY KEY,
+
+username VARCHAR(50),
+
+password VARCHAR(255)
+
+);
+
+INSERT INTO admins(username,password)
+
+VALUES
+
+('admin','admin123');
