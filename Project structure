@@ -1,0 +1,28 @@
+AI-Career-Guidance-System/
+│
+├── frontend/
+│   ├── index.html
+│   ├── login.html
+│   ├── register.html
+│   ├── dashboard.html
+│   ├── career.html
+│   ├── chatbot.html
+│   ├── css/
+│   ├── js/
+│
+├── backend/
+│   ├── app.py
+│   ├── routes.py
+│   ├── ai.py
+│   ├── auth.py
+│   ├── models.py
+│   ├── requirements.txt
+│
+├── database/
+│   ├── career.sql
+│
+├── uploads/
+├── static/
+├── templates/
+├── README.md
+└── Project_Report.pdf
