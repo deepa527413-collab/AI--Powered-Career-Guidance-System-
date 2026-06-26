@@ -1,0 +1,42 @@
+CREATE DATABASE CareerGuidanceSystem;
+
+USE CareerGuidanceSystem;
+
+CREATE TABLE Student (
+    student_id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    password VARCHAR(100) NOT NULL,
+    department VARCHAR(50),
+    year INT
+);
+
+CREATE TABLE Assessment (
+    assessment_id INT PRIMARY KEY AUTO_INCREMENT,
+    student_id INT,
+    python_skill INT,
+    ml_skill INT,
+    dbms_skill INT,
+    aptitude INT,
+    communication INT,
+    FOREIGN KEY (student_id)
+    REFERENCES Student(student_id)
+);
+
+CREATE TABLE Career_Recommendation (
+    recommendation_id INT PRIMARY KEY AUTO_INCREMENT,
+    assessment_id INT,
+    career_name VARCHAR(100),
+    accuracy DECIMAL(5,2),
+    description TEXT,
+    FOREIGN KEY (assessment_id)
+    REFERENCES Assessment(assessment_id)
+);
+
+CREATE TABLE Course (
+    course_id INT PRIMARY KEY AUTO_INCREMENT,
+    career_name VARCHAR(100),
+    course_name VARCHAR(100),
+    platform VARCHAR(100),
+    duration VARCHAR(50)
+);
