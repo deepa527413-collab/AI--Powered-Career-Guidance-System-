@@ -1,0 +1,41 @@
+CREATE DATABASE career_guidance;
+
+USE career_guidance;
+
+CREATE TABLE users(
+
+id INT AUTO_INCREMENT PRIMARY KEY,
+
+name VARCHAR(100),
+
+email VARCHAR(100),
+
+password VARCHAR(100)
+
+);
+
+CREATE TABLE careers(
+
+id INT AUTO_INCREMENT PRIMARY KEY,
+
+career_name VARCHAR(100),
+
+required_skills TEXT,
+
+description TEXT
+
+);
+
+INSERT INTO careers(career_name,required_skills,description)
+
+VALUES
+
+('AI Engineer','Python,Machine Learning','Develop AI models'),
+
+('Data Scientist','Python,SQL,Statistics','Analyze data'),
+
+('Frontend Developer','HTML,CSS,JavaScript','Develop websites'),
+
+('Backend Developer','Python,Flask,MySQL','Develop APIs'),
+
+('Full Stack Developer','HTML,CSS,JS,Python','Complete Web Development');
