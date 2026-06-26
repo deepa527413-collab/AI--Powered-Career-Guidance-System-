@@ -1,0 +1,25 @@
+{% if result %}
+
+<div class="alert alert-success mt-4">
+
+<h3>{{ result.career }}</h3>
+
+<h5>Recommended Skills</h5>
+
+<ul>
+{% for skill in result.skills %}
+<li>{{ skill }}</li>
+{% endfor %}
+</ul>
+
+<h5>Suggested Courses</h5>
+
+<ul>
+{% for course in result.courses %}
+<li>{{ course }}</li>
+{% endfor %}
+</ul>
+
+</div>
+
+{% endif %}
