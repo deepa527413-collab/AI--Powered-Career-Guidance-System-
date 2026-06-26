@@ -1,0 +1,1 @@
+from resume_parser import analyze_resume
