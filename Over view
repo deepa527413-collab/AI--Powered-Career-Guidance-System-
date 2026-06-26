@@ -1,0 +1,234 @@
+# AI Powered Career Guidance System
+
+## Overview
+
+The AI Powered Career Guidance System is a web-based application that helps students and job seekers identify suitable career paths based on their skills, interests, education, and uploaded resumes. The system provides AI-based career recommendations, resume analysis, skill gap analysis, and an AI chatbot for career guidance.
+
+---
+
+## Features
+
+- User Registration & Login
+- Secure Authentication
+- Student Dashboard
+- AI Career Recommendation
+- Resume Upload & Analysis
+- Skill Gap Analysis
+- AI Career Chatbot
+- User Profile Management
+- Feedback Module
+- Admin Login
+- Admin Dashboard
+- Career Management
+- Responsive User Interface
+- MySQL Database Integration
+
+---
+
+## Technology Stack
+
+### Frontend
+- HTML5
+- CSS3
+- JavaScript
+- Bootstrap 5
+
+### Backend
+- Python
+- Flask
+
+### Database
+- MySQL
+
+### AI & Resume Processing
+- OpenAI API (Optional)
+- PyPDF2
+
+---
+
+## Project Structure
+
+```text
+AI_Career_Guidance_System/
+│
+├── app.py
+├── config.py
+├── ai_engine.py
+├── resume_parser.py
+├── requirements.txt
+├── database.sql
+├── README.md
+│
+├── static/
+│   ├── css/
+│   │   └── style.css
+│   ├── js/
+│   │   └── script.js
+│   └── images/
+│
+├── templates/
+│   ├── index.html
+│   ├── login.html
+│   ├── register.html
+│   ├── dashboard.html
+│   ├── career.html
+│   ├── resume.html
+│   ├── chatbot.html
+│   ├── profile.html
+│   ├── feedback.html
+│   ├── admin_login.html
+│   └── admin_dashboard.html
+│
+└── uploads/
+```
+
+---
+
+## Installation
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/AI_Career_Guidance_System.git
+```
+
+### Create a Virtual Environment
+
+```bash
+python -m venv venv
+```
+
+### Activate the Virtual Environment
+
+**Windows**
+
+```bash
+venv\Scripts\activate
+```
+
+**Linux/macOS**
+
+```bash
+source venv/bin/activate
+```
+
+### Install Required Packages
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## Database Setup
+
+Create the database:
+
+```sql
+CREATE DATABASE career_guidance;
+```
+
+Import the SQL file:
+
+```bash
+mysql -u root -p career_guidance < database.sql
+```
+
+Update the MySQL configuration in `app.py` or `config.py`:
+
+```python
+MYSQL_HOST = "localhost"
+MYSQL_USER = "root"
+MYSQL_PASSWORD = ""
+MYSQL_DB = "career_guidance"
+```
+
+---
+
+## Running the Project
+
+```bash
+python app.py
+```
+
+Open your browser and visit:
+
+```
+http://127.0.0.1:5000
+```
+
+---
+
+## AI Recommendation Features
+
+The system analyzes:
+
+- User Skills
+- Interests
+- Education
+- Resume Content
+
+It recommends careers such as:
+
+- AI Engineer
+- Data Scientist
+- Software Engineer
+- Frontend Developer
+- Backend Developer
+- Full Stack Developer
+- Database Administrator
+
+---
+
+## Resume Analysis
+
+Users can upload a PDF resume. The system:
+
+- Extracts text from the resume
+- Identifies technical skills
+- Suggests suitable career paths
+- Recommends additional skills and learning resources
+
+---
+
+## AI Chatbot
+
+The chatbot can answer questions about:
+
+- Career guidance
+- Learning roadmaps
+- Programming languages
+- Resume improvement
+- Industry trends
+- Skill development
+
+---
+
+## Admin Module
+
+The administrator can:
+
+- Manage users
+- Manage career information
+- View uploaded resumes
+- View user feedback
+- Monitor system activity
+
+---
+
+## Future Enhancements
+
+- Machine Learning–based recommendations
+- Real-time AI chatbot integration
+- Email notifications
+- Resume scoring
+- Mock interview module
+- Online course recommendations
+- Job portal integration
+- Mobile application support
+
+---
+
+## License
+
+This project is intended for educational and academic purposes.
