@@ -1,0 +1,23 @@
+AI_Career_Guidance_System/
+│
+├── app.py
+├── config.py
+├── requirements.txt
+├── database.sql
+├── models.py
+├── routes.py
+├── ai_engine.py
+├── static/
+│   ├── css/style.css
+│   ├── js/script.js
+│
+├── templates/
+│   ├── index.html
+│   ├── login.html
+│   ├── register.html
+│   ├── dashboard.html
+│   ├── career.html
+│   ├── chatbot.html
+│   ├── profile.html
+│   └── admin.html
+└── README.md
