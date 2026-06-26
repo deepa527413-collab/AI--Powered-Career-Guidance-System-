@@ -1,0 +1,23 @@
+@app.route("/resume", methods=["GET", "POST"])
+def resume():
+
+    result = None
+
+    if request.method == "POST":
+
+        file = request.files["resume"]
+
+        if file:
+
+            filename = secure_filename(file.filename)
+
+            path = os.path.join(app.config["UPLOAD_FOLDER"], filename)
+
+            file.save(path)
+
+            result = analyze_resume(path)
+
+    return render_template(
+        "resume.html",
+        result=result
+    )
