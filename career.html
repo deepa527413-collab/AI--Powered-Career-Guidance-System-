@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Powered Career Guidance</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1 {
+    color: #2c3e50;
+}
+
+label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 250px;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid #3498db;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#result {
+    margin-top: 20px;
+    color: green;
+    font-size: 22px;
+}
+</style>
+</head>
+<body>
+    <h1>AI Powered Career Guidance System</h1>
+
+    <label>Name:</label>
+    <input type="text" id="name"><br><br>
+
+    <label>Favourite Subject:</label>
+    <select id="subject">
+        <option>Maths</option>
+        <option>Biology</option>
+        <option>Commerce</option>
+    </select><br><br>
+
+    <label>Interest:</label>
+    <select id="interest">
+        <option>Coding</option>
+        <option>Biology</option>
+        <option>Business</option>
+    </select><br><br>
+
+    <button onclick="suggestCareer()">Get Career Suggestion</button>
+
+    <h2 id="result"></h2>
+
+    <script>
+        function suggestCareer() {
+            let name = document.getElementById("name").value;
+            let subject = document.getElementById("subject").value;
+            let interest = document.getElementById("interest").value;
+
+            let career = "";
+
+            if (interest === "Coding" && subject === "Maths") {
+                career = "Software Engineer, Data Scientist, AI Engineer";
+            }
+            else if (interest === "Biology") {
+                career = "Doctor, Biotechnologist";
+            }
+            else if (interest === "Business") {
+                career = "Marketing Manager, Entrepreneur";
+            }
+
+            document.getElementById("result").innerHTML =
+                name + ", Recommended Careers: " + career;
+        }
+    </script>
+</body>
+</html>
